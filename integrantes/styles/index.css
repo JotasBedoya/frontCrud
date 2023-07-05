@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #0000;
+}
+html {
+    scroll-behavior: smooth;/*vivi*/
+}
+/* Body */
+body{
+    background-image: url(/front/integrantes/img/logo/fondo.jpg);
+}
+
+h1{
+    font-size: 8rem;
+    font-family: "Rokkitt";
+    color: #000;
+    text-align: center;
+    padding: 5rem;
+    padding-bottom: 2rem;
+    margin: 5rem auto;
+}
+p{
+    font-family: "Roboto";
+    color:#0b4f6c;
+    font-weight: normal;
+}
+a{ 
+    display: flex;
+    color:white;
+    font-family: "Roboto";
+    font-weight: 700;
+    transition: color 0.5s ease-out;
+    justify-content: flex-start;
+}
+a:hover{
+    color:#23b5d3;
+}
+/*Tarjetas de destinos en P. Principal*/
+#articulos-destino-flex{
+    width:100%;
+    /* padding-left: 5rem; */
+    padding: 5rem auto;
+    margin: 5rem auto;
+    /* padding-bottom: 2rem; */
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center; 
+    flex-wrap: nowrap;
+ 
+}
+.articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 15rem;
+    height: 7rem; */
+    margin: 1rem;
+    padding: 1rem 1rem 0 0;
+}
+.articulos a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+/*Titulos de destinos Home*/
+.p-destinos{
+    display: flex;
+    justify-content: center;
+    align-self: center; /*centradooooo!*/
+    color:rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+.imagen {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem 0 0;
+    border-radius: 50%;
+    /* float: left; */
+}
+
+/* cards */
+#destinos {
+    width:100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.title_card{
+    padding-top: 2rem;
+}
+
+/* footer */
+footer{
+    display: block;
+    position: relative;
+    bottom: 0;
+    height: 10rem;
+    width: 100%;
+    text-decoration: none;
+    padding-top: 5rem;
+}
+footer i{
+    color: white;
+    font-size: 3rem;
+}
+footer i:hover {
+    color: #23b5d3;
+    transition: color 0.5s ease-out;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    column-gap: 3rem;
+    padding: 1rem;
+}
+nav a {
+    text-decoration: none;
+}
+
+#copyright_section{
+    background-color: transparent;
+    text-align: center;
+    padding: 1rem;
+    
+}
+#copyright_section p{
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+/*Fin del footer*/
+
+
+@media (max-width:1005px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .destinos {
+        height: fit-content;
+    }
+
+    #articulos-destino-flex {
+    height: 30rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: nowrap;
+
+    }
+    #articulos-destino-flex p {
+        font-size: 1.5rem;
+    }
+
+}
+@media (max-width: 590px) { /*541 cambia*/
+    h1 {
+        font-size: 3rem;
+        margin: 3rem auto;
+        padding: 1rem auto 0 auto;
+    }
+    #articulos-destino-flex {
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+    }
+    #articulos-destino-flex p {
+        font-size: 1.2rem;
+    }
+    footer {
+        height: 8rem;
+    }
+    footer i {
+        font-size: 1.8rem;
+    }
+    nav {
+        column-gap: 1rem;
+        padding-left: 2rem;
+    }
+
+}
